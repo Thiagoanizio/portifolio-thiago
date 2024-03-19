@@ -254,7 +254,8 @@ body.active .toggle-btn {
 }
 
 .btn-project {
-    width: 230px;
+    width: auto;
+    padding: 4px;
     height: 60px;
     border: 2px solid #111827;
     margin: 12px;
