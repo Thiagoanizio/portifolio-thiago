@@ -235,3 +235,42 @@ section h2 {
     display: flex;
     justify-content: center;
 }
+
+.btn {
+    padding: 12px 18px;
+    background-color: #f9fafb;
+    border: 2px solid #111827;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 4px;
+    /* color: #111827; */
+}
+
+.txt-btn {
+
+}
+
+.btn:hover {
+    background-color: #111827;
+    color: white;
+}
+
+.btn:hover .icon {
+    fill: white;
+}
+
+.instagram-page,
+.linkedin-page,
+.github-page,
+.facebook-page,
+.behance-page,
+.whatsapp-page   {
+    display: flex;
+    gap: 8px;
+    width: min-content;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    /* color: #181848; */
+}
