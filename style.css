@@ -1,271 +1,237 @@
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background-color: #e4e3e8;
-    padding: 0.375rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
     font-family: 'Poppins', sans-serif;
-    position: relative;
 }
 
-button, a {
-    all: unset;
-    font: inherit;
-    cursor: pointer;
+.menu {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav {
+.nav-menu {
+    width: auto;
+    height: 88px;
+    background-color: white;
+    border-radius: 48px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 6px;
     position: fixed;
-    width: 5rem;
-    height: calc(100vh - 0.75rem);
-    background-color: #fff;
-    padding: 1rem 0.75rem;
-    border-radius: 0.75rem;
-    display: flex;
-    flex-direction: column;
-    transition: width 500ms ease;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-body.active nav {
-    width: 15rem;
-}
-
-.sidebar-header,
-.sidebar-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.sidebar-header {
-    margin-bottom: 1.5rem;
-}
-
-.logo-wrapper {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 1.25rem;
-}
-
-.logo-wrapper > img {
-    width: 3.25rem;
-    height: 3.25rem;
-    background-color: #f4f4f6;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
-}
-
-.sidebar-links {
-    flex-direction: column;
-    margin-bottom: auto;
-    gap: 0.6rem;
-    padding-top: 0.5rem;
-}
-
-nav > .sidebar-links {
-    border-top: 1px solid rgb(211, 211, 211);
-}
-
-body.active .sidebar-links,
-body.active .sidebar-header,
-body.active .user-profile {
-    justify-content: start;
-    align-items: stretch;
-}
-
-.link {
-    display: flex;
-    padding: 0.6rem;
-    border-radius: 0.5rem;
-    gap: 1.5rem;
-}
-
-.hidden {
-    display: none;
-}
-
-body.active .hidden {
-    display: inline;
-}
-
-.link:hover,
-.link.active:hover {
-    background-color: #e4e4e8;
-}
-
-
-.link.active {
-    background-color: #f4f4f6;
-}
-
-.link > img {
-    width: 24px;
-    height: 24px;
-}
-
-.sidebar-bottom .sidebar-links {
-    padding-bottom: 1.5rem;
-}
-
-.toggle-btn {
-    position: absolute;
-    top: 10px;
-    right: -50px;
-    padding: 0.5rem;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.25s ease;
-}
-
-body.active .toggle-btn {
-    transform: rotate(180deg);
-}
-
-.user-profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgb(211, 211, 211);
-}
-
-.user-avatar {
-    width: 48px;
-    height: 48px;
+.btn-nav1 {
+    width: auto;
+    height: 56px;
+    background-color: #181848;
+    color: white;
+    font-size: 20px;
+    margin: 8px 8px;
+    border-radius: 32px;
+    border: none;
+    padding: 16px 24px;
+    font-weight: bolder;
     cursor: pointer;
-    transition: scale 0.2s ease;
 }
 
-.user-avatar img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    background-size: cover;
+.btn-nav {
+    width: auto;
+    height: 56px;
+    background-color: unset;
+    color: #181848;
+    font-size: 20px;
+    margin: 8px;
+    border-radius: 32px;
+    border: none;
+    padding: 16px 24px;
+    font-weight: bolder ;
 }
 
-.user-avatar:hover {
-    scale: 1.1;
+.btn-nav:hover {
+    background-color: #181848;
+    color: white;
+    cursor: pointer;
 }
 
-.user-details {
-    align-self: center;
-    overflow: hidden;
+.title-home {
+    text-align: center;
+    font-size: 54px;
 }
 
-.user-details .username {
-    font-size: 0.85rem;
-    font-weight: 600;
+p {
+    margin: 29px 46px;
+    font-size: 22px;
 }
 
-.user-details .user-email {
-    font-size: 0.8rem;
+.subtitle-home {
+    text-align: center;
+    margin-top: 33px;
 }
 
-.container-body {
-    width: 100%;
-    height: 100%;
-    /* background-color: pink; */
+.btn-type {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.btn-type-job {
+    width: 300px;
+    height: 89px;
+    background-color: #181848;
+    color: white;
     border-radius: 16px;
-    padding-left: 9rem;
-    
+    border: none;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 0 16px;
 }
 
-.instagram-page,
-.linkedin-page,
-.github-page,
-.facebook-page,
-.behance-page,
-.whatsapp-page   {
+.title-gallery {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.container-galeria {
     display: flex;
-    gap: 8px;
-    margin: 12px;
-    width: min-content;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-galeria {
+    width: 392px;
+    height: 252px;
+    background-color: pink;
+    margin: 16px;
+    border-radius: 16px;
+}
+
+/* ============================ fim do estilo index ================== */
+/* ********************************************************************************* */
+
+/* ==========================Começo estilo meus-trabalhos ====================== */
+
+.container-drop {
+    display: flex;
     align-items: center;
 }
 
-.btn-whatsapp,
-.btn-instagram,
-.btn-facebook,
-.btn-behance,
-.btn-github,
-.btn-linkedin {
-    padding: 0 18px;
-    background-color: #f9fafb;
-    border: 2px solid #111827;
-    border-radius: 0.5rem;
-    cursor: pointer;
+.select {
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    border: #181848 2px solid;
+    color: #181848;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 16px;
+    padding: auto 8px;
+}
+
+option {
+    border-radius: 2px;
+    padding: 16px;
     margin: 4px;
 }
 
-.btn-whatsapp:hover,
-.btn-behance:hover,
-.btn-instagram:hover,
-.btn-github:hover,
-.btn-linkedin:hover,
-.btn-facebook:hover {
-    background-color: #111827;
-    color: white;
+section {
+    margin-top: 24px;
 }
 
-.btn-whatsapp:hover .icon {
-    fill: white;
+section h2 {
+    margin-left: 32px;
 }
 
-.btn-behance:hover .icon {
-    fill: white;
+.title-gallery-projects {
+    text-align: left;
+    margin-top: 24px;
+    margin-left: 52px;
 }
 
-.btn-instagram:hover .icon {
-    fill: white;
-}
+/* ==========================Fim estilo meus-trabalhos ====================== */
+/* ******************************************************************* */
 
-.btn-github:hover .icon {
-    fill: white;
-}
+/* ==========================Começo estilo sobre-mim ====================== */
 
-.btn-linkedin:hover .icon {
-    fill: white;
-}
-
-.btn-facebook:hover .icon {
-    fill: white;
-}
-
-.container-body-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
-}
-
-.btn-project {
-    width: 230px;
-    padding: 4px;
-    height: 60px;
-    border: 2px solid #111827;
-    margin: 12px;
-    font-size: 10px;
+.container-img {
     text-align: center;
-    border-radius: 0.5rem;
-    background-color: #fff;
 }
 
-.btn-project:hover {
-    background-color: #111827;
-    color: white;
+.container-resume {
+    justify-content: center;
+}
+
+.hability {
+    text-align: center;
+    font-weight: 800;
+}
+
+.container-skill {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.skill {
+    width: auto;
+    height: 51px;
+    padding: 16px 8px;
+    margin: 0 8px;
+    border: 2px #181848 solid;
+    border-radius: 8px;
+    color: #181848;
+    font-weight: bold;
+}
+
+/* ============================ fim do estilo sobre-mim ================== */
+/* ********************************************************************************* */
+
+/* ==========================Começo estilo contato ====================== */
+
+.title-contato {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.container-line {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.vertical-line {
+    height: 59px;
+    border-left: 2px solid #181848;
+}
+
+.call-me{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.btn {
+    margin: 8px 8px;
+}
+
+.set {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
 }

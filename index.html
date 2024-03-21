@@ -5,62 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio Thiago</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div class="sidebar-header">
-            <a class="logo-wrapper">
-                <img src="assets/logo.svg" alt="logo">
-                <h2 class="hidden">LOGO</h2>
-            </a>
-            <button class="toggle-btn">
-                <img src="assets/expand.svg" alt="expand button">
-            </button>
-        </div>
-
-        <div class="sidebar-links">
-            <a class="link active">
-                <img src="./assets/home.svg" alt="">
-                <span class="hidden">Início</span>
-            </a>
-            <a class="link" href="./projetos.html">
-                <img src="./assets/projects.svg" alt="">
-                <span class="hidden">Projetos</span>
-            </a>
-            <a class="link" href="./galeria.html">
-                <img src="./assets/dashboard.svg" alt="">
-                <span class="hidden">Galeria</span>
-            </a>
-            <a class="link">
-                <img src="./assets/tasks.svg" alt="">
-                <span class="hidden">Trabalhos</span>
-            </a>
-            <!-- adicionar mais links-->
-        </div>
-
-        <div>
-
-            <div class="sidebar-bottom">
-                <div class="sidebar-links">
-                    <a class="link" href="./contato.html">
-                        <img src="./assets/contact.svg" alt="">
-                        <span class="hidden">Contato</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="user-profile">
-                <div class="user-avatar">
-                    <img src="./assets/perfil-thiago.jpg" alt="">
-                </div>
-                <div class="user-details hidden">
-                    <p class="username">Thiago Anízio</p>
-                    <p class="user-email">thiagomi1912@gmail.com</p>
-                </div>
-            </div>
+    <nav class="menu">
+        <div class="nav-menu">
+            <a href="./index.html"><button class="btn-nav1">Início</button></a>
+            <a href="./meus-trabalhos.html"><button class="btn-nav">Meus trabalhos</button></a>
+            <a href="./sobre-mim.html"><button class="btn-nav">Sobre mim</button></a>
+            <a href="./contato.html"><button class="btn-nav">Contato</button></a>
         </div>
     </nav>
 
+    <h1 class="title-home">Olá, Mundo!</h1>
+    <p>Prazer, me chamo Thiago, e esse aqui é meu portifólio. Atualmente trabalho como Designer Gráfico, UX/UI Designer,
+        e como Desenvolvedor Web Front-End, abaixo estão alguns de meus trabalhos, fique a vontade para bisbilhotar hehe.</p>
+
+    <h2 class="subtitle-home">Selecione um tipo de trabalho abaixo:</h2>
+
+    <section class="btn-type">
+        <button class="btn-type-job">UX/UI Design</button>
+        <button class="btn-type-job">Designer Gráfico</button>
+        <button class="btn-type-job">Dev Web Front</button>
+    </section>
+
+    <h1 class="title-gallery">Minha galeria de trabalho</h1>
+
+    <div class="container-galeria">
+        <div class="card-galeria"></div>
+        <div class="card-galeria"></div>
+        <div class="card-galeria"></div>
+        <div class="card-galeria"></div>
+        <div class="card-galeria"></div>
+        <div class="card-galeria"></div>
+    </div>
 </body>
 </html>
