@@ -18,14 +18,14 @@
   
     <section class="container-drop">
         <h2>Visualizar por categoria:</h2>
-        <select class="select" name="select">
-            <option value="valor1" selected>UI/UX Design</option>
-            <option value="valor2">Design Gráfico</option>
-            <option value="valor3">Dev Web</option>
+        <select class="select" name="select" id="select">
+            <option value="UI/UX Design" selected>UI/UX Design</option>
+            <option value="Design Gráfico">Design Gráfico</option>
+            <option value="Dev Web">Dev Web</option>
         </select>
     </section>
 
-    <h1 class="title-gallery-projects">Meus projetos UX/UI</h1>
+    <h1 class="title-gallery-projects">Meus projetos <span id="selecionado">UX/UI</span></h1>
 
     <div class="container-galeria">
         <div class="card-galeria"></div>
@@ -36,4 +36,5 @@
         <div class="card-galeria"></div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
