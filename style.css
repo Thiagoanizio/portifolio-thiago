@@ -33,6 +33,8 @@ body {
 }
 
 .btn-nav1 {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 56px;
     background-color: #181848;
@@ -47,6 +49,8 @@ body {
 }
 
 .btn-nav {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 56px;
     background-color: unset;
@@ -57,6 +61,13 @@ body {
     border: none;
     padding: 16px 24px;
     font-weight: bolder ;
+    text-decoration: none;
+}
+
+.btn-menu {
+    align-items: center;
+    text-decoration: none;
+
 }
 
 .btn-nav:hover {
@@ -181,13 +192,14 @@ section h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .skill {
     width: auto;
     height: 51px;
     padding: 16px 8px;
-    margin: 0 8px;
+    margin: 4px 8px;
     border: 2px #181848 solid;
     border-radius: 8px;
     color: #181848;
@@ -234,6 +246,7 @@ section h2 {
 .social-media {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
