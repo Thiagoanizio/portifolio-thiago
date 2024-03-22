@@ -33,6 +33,8 @@ body {
 }
 
 .btn-nav1 {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 56px;
     background-color: #181848;
@@ -47,6 +49,8 @@ body {
 }
 
 .btn-nav {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 56px;
     background-color: unset;
@@ -57,6 +61,13 @@ body {
     border: none;
     padding: 16px;
     font-weight: bolder ;
+    text-decoration: none;
+}
+
+.btn-menu {
+    align-items: center;
+    text-decoration: none;
+
 }
 
 .btn-nav:hover {
@@ -181,13 +192,14 @@ section h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .skill {
     width: auto;
     height: 51px;
     padding: 16px 8px;
-    margin: 0 8px;
+    margin: 4px 8px;
     border: 2px #181848 solid;
     border-radius: 8px;
     color: #181848;
@@ -234,17 +246,25 @@ section h2 {
 .social-media {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
 }
 
 .btn {
     display: flex;
     align-items: center;
+=======
+    flex-wrap: wrap;
+}
+
+.btn {
+>>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
     padding: 12px 18px;
     background-color: #f9fafb;
     border: 2px solid #111827;
     border-radius: 0.5rem;
     cursor: pointer;
     margin: 4px;
+<<<<<<< HEAD
     text-decoration: none;
 }
 
@@ -258,16 +278,45 @@ section h2 {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+=======
+    /* color: #111827; */
+}
+
+.txt-btn {
+
+>>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
 }
 
 .btn:hover {
     background-color: #111827;
+<<<<<<< HEAD
+=======
+    color: white;
+>>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
 }
 
 .btn:hover .icon {
     fill: white;
 }
 
+<<<<<<< HEAD
 .btn:hover .page-in {
     color: white;
 }
+=======
+.instagram-page,
+.linkedin-page,
+.github-page,
+.facebook-page,
+.behance-page,
+.whatsapp-page   {
+    display: flex;
+    gap: 8px;
+    width: min-content;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    /* color: #181848; */
+}
+>>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
