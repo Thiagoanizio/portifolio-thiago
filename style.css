@@ -21,10 +21,10 @@ body {
 
 .nav-menu {
     width: auto;
-    height: 88px;
+    /* height: 88px; */
     background-color: white;
     border-radius: 48px;
-    padding: 16px 24px;
+    /* padding: 16px 24px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,10 +38,10 @@ body {
     background-color: #181848;
     color: white;
     font-size: 20px;
-    margin: 8px 8px;
+    margin: 8px;
     border-radius: 32px;
     border: none;
-    padding: 16px 24px;
+    padding: 16px;
     font-weight: bolder;
     cursor: pointer;
 }
@@ -55,7 +55,7 @@ body {
     margin: 8px;
     border-radius: 32px;
     border: none;
-    padding: 16px 24px;
+    padding: 16px;
     font-weight: bolder ;
 }
 
@@ -222,9 +222,9 @@ section h2 {
     margin-top: 8px;
 }
 
-.btn {
+/* .btn {
     margin: 8px 8px;
-}
+} */
 
 .set {
     display: flex;
@@ -234,4 +234,40 @@ section h2 {
 .social-media {
     display: flex;
     justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    background-color: #f9fafb;
+    border: 2px solid #111827;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.page-in {
+    display: flex;
+    align-items: center;
+    color:#111827;
+    gap: 8px;
+    background-color: unset;
+    border-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #111827;
+}
+
+.btn:hover .icon {
+    fill: white;
+}
+
+.btn:hover .page-in {
+    color: white;
 }
