@@ -318,7 +318,11 @@ section h2 {
     /* color: #181848; */
 }
 
-@media (max-width: 480px) {
+/* ---------------------------------------------------------------------- */
+/* ********************************************************************** */
+/* ----------------------Responsivo------------------------------------- */
+
+@media (max-width: 767px) {
     .menu {
         margin: 0;
         padding: 0;
@@ -337,4 +341,34 @@ section h2 {
         font-size: clamp(1px, 1vh, 25px);
         color: white;
     }
+}
+
+.container-resume {
+    justify-content: center;
+}
+
+.resume {
+    padding: 0 24px;
+    text-align: justify;
+}
+
+.call-me{
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 0 16px;
+}
+
+.container-drop {
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.text-intro {
+    margin: 29px 24px;
 }
