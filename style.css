@@ -99,12 +99,13 @@ p {
 
 .btn-type-job {
     width: 300px;
-    height: 89px;
+    height: clamp(5rem, 3.5vh, 0.3rem);
+    /* height: auto; */
     background-color: #181848;
     color: white;
     border-radius: 16px;
     border: none;
-    font-size: 32px;
+    font-size: clamp(1rem, 3.5vw, 1.7rem);
     font-weight: bolder;
     margin: 0 16px;
 }
@@ -246,25 +247,21 @@ section h2 {
 .social-media {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
 }
 
 .btn {
     display: flex;
     align-items: center;
-=======
     flex-wrap: wrap;
 }
 
 .btn {
->>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
     padding: 12px 18px;
     background-color: #f9fafb;
     border: 2px solid #111827;
     border-radius: 0.5rem;
     cursor: pointer;
     margin: 4px;
-<<<<<<< HEAD
     text-decoration: none;
 }
 
@@ -278,32 +275,27 @@ section h2 {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-=======
     /* color: #111827; */
 }
 
-.txt-btn {
+/* .txt-btn {
 
->>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
-}
+} */
 
 .btn:hover {
     background-color: #111827;
-<<<<<<< HEAD
-=======
     color: white;
->>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
 }
 
 .btn:hover .icon {
     fill: white;
 }
 
-<<<<<<< HEAD
+
 .btn:hover .page-in {
     color: white;
 }
-=======
+
 .instagram-page,
 .linkedin-page,
 .github-page,
@@ -319,4 +311,24 @@ section h2 {
     text-decoration: none;
     /* color: #181848; */
 }
->>>>>>> 11c37f222070d439ea3e05173ac0aeed47b9eb2e
+
+@media (max-width: 480px) {
+    .menu {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    .nav-menu .btn-menu{
+        width: auto;
+        height: 76px;
+        background-color: #181848;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    .btn-nav {
+        font-size: clamp(1px, 1vh, 25px);
+        color: white;
+    }
+}
