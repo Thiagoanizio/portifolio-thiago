@@ -346,14 +346,16 @@ section h2 {
     .nav-menu {
         width: 100%;
         height: 76px;
-        background-color: #181848;
+        background-color: #0f172a;
         border-radius: 0;
+        border-bottom: #5eead4 3px solid;
         justify-content: start;
+        box-shadow: none;
     }
 
     .btn-nav {
         font-size: clamp(1px, 1vh, 25px);
-        color: white;
+        color: #5eead4;
     }
 }
 
