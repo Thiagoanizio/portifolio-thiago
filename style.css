@@ -81,7 +81,8 @@ body {
     font-size: 54px;
 }
 
-p {
+.text-intro {
+    text-align: justify;
     margin: 29px 46px;
     font-size: 22px;
 }
@@ -184,6 +185,10 @@ section h2 {
     justify-content: center;
 }
 
+.resume {
+    text-align: justify;
+}
+
 .hability {
     text-align: center;
     font-weight: 800;
@@ -247,6 +252,7 @@ section h2 {
 .social-media {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -319,12 +325,12 @@ section h2 {
         display: block;
     }
     
-    .nav-menu .btn-menu{
-        width: auto;
+    .nav-menu {
+        width: 100%;
         height: 76px;
         background-color: #181848;
         border-radius: 0;
-        justify-content: center;
+        justify-content: start;
     }
 
     .btn-nav {
