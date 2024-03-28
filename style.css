@@ -345,10 +345,12 @@ section h2 {
 
 .container-resume {
     justify-content: center;
+    margin: 16px 0;
 }
 
 .resume {
-    padding: 0 24px;
+    margin-bottom: 16px;
+    padding: 0 16px;
     text-align: justify;
 }
 
@@ -370,5 +372,5 @@ h2 {
 }
 
 .text-intro {
-    margin: 29px 24px;
+    margin: 29px 16px;
 }
