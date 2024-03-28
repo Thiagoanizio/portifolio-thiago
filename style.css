@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #0f172a;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -22,13 +22,13 @@ body {
 .nav-menu {
     width: auto;
     /* height: 88px; */
-    background-color: white;
+    background-color: #5eead4;
     border-radius: 48px;
     /* padding: 16px 24px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 6px;
+    box-shadow: 1px 1px 12px #5eead4;
     position: fixed;
 }
 
@@ -37,8 +37,8 @@ body {
     align-items: center;
     width: auto;
     height: 56px;
-    background-color: #181848;
-    color: white;
+    background-color: #0f172a;
+    color: #5eead4;
     font-size: 20px;
     margin: 8px;
     border-radius: 32px;
@@ -54,7 +54,7 @@ body {
     width: auto;
     height: 56px;
     background-color: unset;
-    color: #181848;
+    color: #0f172a;
     font-size: 20px;
     margin: 8px;
     border-radius: 32px;
@@ -71,25 +71,28 @@ body {
 }
 
 .btn-nav:hover {
-    background-color: #181848;
-    color: white;
+    background-color: #0f172a;
+    color: #5eead4;
     cursor: pointer;
 }
 
 .title-home {
     text-align: center;
     font-size: 54px;
+    color: white;
 }
 
 .text-intro {
     text-align: justify;
     margin: 29px 46px;
     font-size: 22px;
+    color: white;
 }
 
 .subtitle-home {
     text-align: center;
     margin-top: 33px;
+    color: white;
 }
 
 .btn-type {
@@ -102,10 +105,10 @@ body {
     width: 300px;
     height: clamp(5rem, 3.5vh, 0.3rem);
     /* height: auto; */
-    background-color: #181848;
-    color: white;
+    background-color: unset;
+    color: #5eead4;
     border-radius: 16px;
-    border: none;
+    border: 1px solid #5eead4;
     font-size: clamp(1rem, 3.5vw, 1.7rem);
     font-weight: bolder;
     margin: 0 16px;
@@ -114,6 +117,7 @@ body {
 .title-gallery {
     margin-top: 24px;
     text-align: center;
+    color: white;
 }
 
 .container-galeria {
@@ -125,7 +129,7 @@ body {
 .card-galeria {
     width: 392px;
     height: 252px;
-    background-color: pink;
+    background-color: white;
     margin: 16px;
     border-radius: 16px;
 }
@@ -138,18 +142,22 @@ body {
 .container-drop {
     display: flex;
     align-items: center;
+    background-color: unset;
 }
 
 .select {
     width: 160px;
     height: 48px;
     border-radius: 8px;
-    border: #181848 2px solid;
-    color: #181848;
+    border: #5eead4 2px solid;
+    color: #5eead4;
     font-size: 16px;
     font-weight: bold;
     margin-left: 16px;
-    padding: auto 8px;
+    /* padding: auto 4px; */
+    gap: 2px;
+    background-color: unset;
+    outline: unset;
 }
 
 option {
@@ -164,12 +172,14 @@ section {
 
 section h2 {
     margin-left: 32px;
+    color: white;
 }
 
 .title-gallery-projects {
     text-align: left;
     margin-top: 24px;
     margin-left: 52px;
+    color: white;
 }
 
 /* ==========================Fim estilo meus-trabalhos ====================== */
@@ -187,11 +197,13 @@ section h2 {
 
 .resume {
     text-align: justify;
+    color: white;
 }
 
 .hability {
     text-align: center;
     font-weight: 800;
+    color: white;
 }
 
 .container-skill {
@@ -206,9 +218,9 @@ section h2 {
     height: 51px;
     padding: 16px 8px;
     margin: 4px 8px;
-    border: 2px #181848 solid;
+    border: 2px #5eead4 solid;
     border-radius: 8px;
-    color: #181848;
+    color: #5eead4;
     font-weight: bold;
 }
 
@@ -220,6 +232,7 @@ section h2 {
 .title-contato {
     text-align: center;
     margin-bottom: 16px;
+    color: white;
 }
 
 .container-line {
@@ -230,7 +243,7 @@ section h2 {
 
 .vertical-line {
     height: 59px;
-    border-left: 2px solid #181848;
+    border-left: 2px solid white;
 }
 
 .call-me{
@@ -238,6 +251,7 @@ section h2 {
     font-size: 18px;
     margin-bottom: 8px;
     margin-top: 8px;
+    color: white;
 }
 
 /* .btn {
